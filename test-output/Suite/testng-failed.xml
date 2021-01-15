@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="practice.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Homepagetest(failed)">
+    <classes>
+      <class name="practice.validateNavbar">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validateNavbar -->
+      <class name="practice.validatetext">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validatetext -->
+      <class name="practice.Homepage">
+        <methods>
+          <include name="Homepage"/>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.Homepage -->
+    </classes>
+  </test> <!-- Homepagetest(failed) -->
+  <test parallel="tests" name="Navbartest(failed)">
+    <classes>
+      <class name="practice.validateNavbar">
+        <methods>
+          <include name="ValidateNavbar"/>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validateNavbar -->
+      <class name="practice.validatetext">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validatetext -->
+      <class name="practice.Homepage">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.Homepage -->
+    </classes>
+  </test> <!-- Navbartest(failed) -->
+  <test parallel="tests" name="validatetest(failed)">
+    <classes>
+      <class name="practice.validateNavbar">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validateNavbar -->
+      <class name="practice.validatetext">
+        <methods>
+          <include name="validateText"/>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.validatetext -->
+      <class name="practice.Homepage">
+        <methods>
+          <include name="Intialize"/>
+        </methods>
+      </class> <!-- practice.Homepage -->
+    </classes>
+  </test> <!-- validatetest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
